@@ -12,6 +12,13 @@ A：File -> Project Structure... -> Modules -> Paths，选第一个就不会出�
 
 --另外：在项目第一次上传到git上时，建议先删掉.classes编译文件目录
 
+=====（2019-02-27下午遇到坑！！）多git账号配置时一定要注意、、、
+基本设计ssh的操作，都要将 对应git上的域名，改用你本地的别名（clone、本地上传等，多在命令行操作时会遇到）
+
+# 配置github.com，即qq邮箱账号
+Host github（本地配置的别名，可任意命名）
+HostName github.com（真实域名，git上的）
+
 ********************文件区别 简单的概括如下：
 
 IntelliJ系中的 Project  相当于Eclipse系中的  Workspace ；
