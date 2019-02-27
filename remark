@@ -1,0 +1,23 @@
+#备注将普通eclipse项目迁移到idea
+
+在idea里面：File -> New -> Module from Exitsing Sources -> 选中对应eclipse项目，ok -> Create module from existing sources -> 后面一直Nest即可
+
+完成后会在文件目录下面生成 项目.iml文件，完成（这种情况不会生成.idea文件夹）
+
+项目导入后，要第一时间设置（File -> Project Structure...），
+其中Project compilter output（编译好的.class文件存放路径），一般建议和eclipse一样，在webapp -> WEB-INF同级目录的classes文件夹下
+Q：发现编译文件生成路径不对？
+A：File -> Project Structure... -> Modules -> Paths，选第一个就不会出现上面的问题，但生成的路径会多包几层
+
+
+--另外：在项目第一次上传到git上时，建议先删掉.classes编译文件目录
+
+********************文件区别 简单的概括如下：
+
+IntelliJ系中的 Project  相当于Eclipse系中的  Workspace ；
+
+IntelliJ系中的 Module  相当于Eclipse系中的  Project （*重要*）；
+
+IntelliJ中一个 Project  可以包括多个  Module ；
+
+Eclipse中一个 Workspace  可以包括多个  Project；
