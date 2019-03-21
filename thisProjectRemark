@@ -1,0 +1,7 @@
+-----2019/03/21 晚：21:15
+
+该项目有eclipse项目的配置（.project和.classpath配置文件），
+所以 当做 eclipse项目导入时，选择：
+ ***第二步选类型时，选Eclipse，后面一路确定就OK了
+
+如果发现 右上角 没有Git相关图标，选择File -- Settings -- Version Control --右侧小+号，添加Git管理。。就OK了
