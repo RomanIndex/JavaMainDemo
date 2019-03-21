@@ -5,3 +5,7 @@
  ***第二步选类型时，选Eclipse，后面一路确定就OK了
 
 如果发现 右上角 没有Git相关图标，选择File -- Settings -- Version Control --右侧小+号，添加Git管理。。就OK了
+
+
+另一种，就是 删掉 JavaMainEclipse.iml 文件，
+在载入界面（删掉一些没用的），选择 open -- 即可（删.iml文件，选open）
