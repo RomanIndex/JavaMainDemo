@@ -1,11 +1,24 @@
 -----2019/03/21 晚：21:15
 
-该项目有eclipse项目的配置（.project和.classpath配置文件），
+》》》该项目有eclipse项目的配置（.project和.classpath配置文件），
 所以 当做 eclipse项目导入时，选择：
  ***第二步选类型时，选Eclipse，后面一路确定就OK了
 
 如果发现 右上角 没有Git相关图标，选择File -- Settings -- Version Control --右侧小+号，添加Git管理。。就OK了
 
 
-另一种，就是 删掉 JavaMainEclipse.iml 文件，
-在载入界面（删掉一些没用的），选择 open -- 即可（删.iml文件，选open）
+》》》另一种，就是 删掉 JavaMainEclipse.iml 文件，
+在载入界面（删掉一些没用的），选择 open -- 即可（删.iml文件，选open），会重新自动生成.iml文件
+
+
+----发现为什么有时候，main文件打不开run() 和 debug()--------
+造成原因：右键项目 -- Remove Module --（猜想，这样删后，文件脱离了IDEA的控制，下次进来就会出现上面的情况）
+
+但是.iml文件还是 保存 在 项目目录 下的
+
+下次想重新正常打开，就要在关闭IDEA的情况下，删掉 目录下面的.idea文件，再打开IDEA就可以进入到 首页界面，
+这次在 首页界面 就有多种打开方式了
+
+有一种就是 提示.iml文件已存在，那么直接选择reuse重新使用即可
+
+-----剩下就是如何连通Github的了，，已经爬过很多坑了，简单了！！
