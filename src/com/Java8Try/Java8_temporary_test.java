@@ -22,6 +22,13 @@ public class Java8_temporary_test {
 		list.add(s2);
 		list.add(s3);
 		list.add(s4);
+
+		//直接操作原集合
+		/*list = list.stream().filter(i -> i.getAge() > 100).collect(Collectors.toList());
+		list.stream().forEach(e -> System.out.println("操作原集合："+ e.getName()));*/
+
+		long size = list.stream().skip(0).limit(3).count();
+		System.out.println("skip(0).limit(x) = "+ size);
 		
 		//取集合 对象 的属性值
 		String filter = list.stream().filter(each -> each.getAge() == 23).map(i -> i.getName()).collect(Collectors.toList()).get(0);
